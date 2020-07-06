@@ -12,6 +12,10 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		생성자
 
+	public PersonVo() {
+		
+	}
+	
 	public PersonVo(int no, String pw) {
 		this.No = no;
 		this.Pw = pw;
