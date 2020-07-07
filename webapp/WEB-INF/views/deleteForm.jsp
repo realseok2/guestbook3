@@ -10,14 +10,13 @@
 <body>
 	<h4>방명록 삭제</h4>
 
-	<form action = "${pageContext.request.contextPath }/guestbook/delete/${num }" method = "post">
-	
-		비밀번호(Password)	:	<input type = "password"	name = "password">
+	<form action = "${pageContext.request.contextPath }/guest/delete/${no}" method = "post">
+		비밀번호(Password)	:	<input type = "password"	name = "pw">
 		<button type = "submit">확인</button><br>
 
 	</form>
 
-	<a href="${pageContext.request.contextPath }/guestbook/list">메인으로 돌아가기</a>
+	<a href="${pageContext.request.contextPath }/guest/list">메인으로 돌아가기</a>
 	
 </body>
 </html>

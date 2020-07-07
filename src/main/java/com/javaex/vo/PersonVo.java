@@ -4,101 +4,94 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		필드
 
-	private int No; // 게시물 코드
-	private String Name; // 작성자 이름
-	private String Pw; // 작성글 패스워드
-	private String Content; // 작성글 내용
-	private String Date; // 작성글 날짜
+	private int no; // 게시물 코드
+	private String name; // 작성자 이름
+	private String pw; // 작성글 패스워드
+	private String content; // 작성글 내용
+	private String regDate; // 작성글 날짜
 
 //------------------------------------------------------------------------------------		생성자
 
 	public PersonVo() {
-		
+
 	}
-	
+
 	public PersonVo(int no, String pw) {
-		this.No = no;
-		this.Pw = pw;
+		this.no = no;
+		this.pw = pw;
 	}
 
 	public PersonVo(String name, String pw, String content) {
-		this.Name = name;
-		this.Pw = pw;
-		this.Content = content;
-	}
-	
-	public PersonVo(int no, String name, String pw, String content) {
-		this.No = no;
-		this.Name = name;
-		this.Pw = pw;
-		this.Content = content;
+		this.name = name;
+		this.pw = pw;
+		this.content = content;
 	}
 
-	public PersonVo(int no, String name, String pw, String content, String date) {
-		this.No = no;
-		this.Name = name;
-		this.Pw = pw;
-		this.Content = content;
-		this.Date = date;
+	public PersonVo(int no, String name, String pw, String content) {
+		this.no = no;
+		this.name = name;
+		this.pw = pw;
+		this.content = content;
+	}
+
+	public PersonVo(int no, String name, String pw, String content, String regDate) {
+		this.no = no;
+		this.name = name;
+		this.pw = pw;
+		this.content = content;
+		this.regDate = regDate;
 	}
 
 //------------------------------------------------------------------------------------		getter, setter
 
 	public int getNo() {
-		return No;
+		return no;
 	}
 
 	public void setNo(int no) {
-		No = no;
+		this.no = no;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getPw() {
-		return Pw;
+		return pw;
 	}
 
 	public void setPw(String pw) {
-		Pw = pw;
+		this.pw = pw;
 	}
 
 	public String getContent() {
-		return Content;
+		return content;
 	}
 
 	public void setContent(String content) {
-		Content = content;
+		this.content = content;
 	}
 
-	public String getDate() {
-		return Date;
+	public String getRegDate() {
+		return regDate;
 	}
 
-	public void setDate(String date) {
-		Date = date;
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
 	}
 
 //------------------------------------------------------------------------------------		일반 메소드
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 //------------------------------------------------------------------------------------		toString()
 
 	@Override
 	public String toString() {
-		return "PersonVo [No=" + No + ", Name=" + Name + ", Pw=" + Pw + ", Content=" + Content + ", Date=" + Date + "]";
+		return "PersonVo [no=" + no + ", name=" + name + ", pw=" + pw + ", content=" + content + ", regDate=" + regDate
+				+ "]";
 	}
+
 }
